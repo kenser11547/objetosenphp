@@ -24,21 +24,21 @@ $mesa = new Producto();
 $mesa->nombre = "Mesa";
 $mesa->precio = 500;
 $mesa->disponible = true;
-echo '<pre>';
-var_dump($mesa);
-echo "</pre>";
 
 $silla = new Producto();
 
-$silla->nombre = "Silla";
-$silla->precio = 00;
-$silla->disponible = true;
+$silla->nombre = "Silla grande";
+$silla->precio = 100;
+$silla->disponible = false;
+
+echo '<pre>';
+var_dump($mesa);
+echo "</pre>";
 echo '<pre>';
 var_dump($silla);
 echo "</pre>";
 
 $mesa->mostrarNombreProducto();
+$silla->mostrarPrecioProducto();
 $mesa->mostrarPrecioProducto();
-
-
-
+?>
